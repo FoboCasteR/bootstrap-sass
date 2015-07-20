@@ -1,5 +1,5 @@
-require 'bootstrap-sass/version'
-module Bootstrap
+require 'bootstrap-sass-3/version'
+module Bootstrap3
   class << self
     # Inspired by Kaminari
     def load!
@@ -69,8 +69,9 @@ module Bootstrap
       )
     end
 
+
     def register_rails_engine
-      require 'bootstrap-sass/engine'
+      require 'bootstrap-sass-3/engine'
     end
 
     def register_sprockets
@@ -81,4 +82,4 @@ module Bootstrap
   end
 end
 
-Bootstrap.load!
+Bootstrap3.load!
